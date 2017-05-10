@@ -1,7 +1,6 @@
-FROM debian
+FROM aimad/projetdockerhub
 
-RUN apt-get update
-RUN apt-get -y install git apache2
+RUN rm /var/www/html/index.html
 
 COPY index.html /var/www/html/
 
