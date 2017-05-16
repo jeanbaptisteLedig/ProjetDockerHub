@@ -7,7 +7,7 @@ docker build -t aimad/projetdockerhub .
 
 # Stop current instance if exists
 if [ $INSTANCE_RUNNING -gt 1 ] ; then
-    printf "Stopping jaimad/ProjetDockerHub"
+    printf "Stopping aimad/ProjetDockerHub"
     docker stop prod-devops
     docker rm prod-devops
 fi
