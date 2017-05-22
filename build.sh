@@ -2,6 +2,8 @@
 
 INSTANCE_RUNNING=`sudo docker ps --filter="ancestor=aimad/projetdockerhub" | wc -l`
 
+docker container rm prod-devops
+
 # Build docker image
 docker build -t aimad/projetdockerhub .
 
